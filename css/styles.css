@@ -15,9 +15,14 @@
 	margin-top:10px;
 	border-color: #ff4d4d;
 	background-color: #ffffe6;
+	width:11%;
+	height:72px;
 }
 #menu_button span{
 	background-color: #ff4d4d;
+	width:70%;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 #menu_button:hover{
@@ -29,15 +34,17 @@
 
 
 #nbrand {
-font-size: 1.5em;
+font-size: 4em;
 border-radius: 5px 5px 5px 5px;
 margin-left:20px;
-width:150px;
+width:300px;
 margin-bottom:5px;
-margin-top:5px;
+margin-top:10px;
 font-weight: bold;
+height: 70px;
 /*border:1px solid black;*/
-overflow: hidden;
+padding-top:20px;
+padding-bottom:10px;
 background-color: #ff4d4d;
 color:#ffffe6;
 text-shadow: 1px 1px #cc0000;
@@ -47,14 +54,16 @@ box-shadow: 1px 1px #cc0000;
 #header-nav{
 	background-color: #ffe6e6;
 	list-style-type: none;
-}
+	margin:0;
+	height:100px;
+	display: block}
 
 
 #collapsable-nav{
 	clear:both;
-	margin-top:10px;
 	background-color:#ff4d4d;
-
+	position: relative;
+	list-style: none;
 }
 
 ul{
@@ -92,17 +101,74 @@ color:#ff4d4d;
 
 #collapsable-nav a:hover{
 	text-decoration: none;
-
 } 
 
-#collapsable-nav ul:hover{
-	
+/*Main Content stylings here*/
+
+
+/*div container element*/
+#content-div{
+/*border:1px solid black;*/
+width:100%;
+background-color: #ffffe6;
+padding:0;
+padding-top:70px;
+padding-bottom:20px;
 
 }
 
+/*HEADING OUR MENU*/
+#menu_header{
+	
+	font-size:3em;
+	/*border:1px solid black;*/
+	width:90%;
+	display:block;
+	float:none;
+	position: relative;
+	margin:0 auto 30px;
+	color:#ffffe6;
+	text-shadow: 1px 1px 0px black,1px 4px 10px #ff0000,1px 4px 20px #ff0000,1px 4px 30px #ff0000,1px 4px 40px #ff0000,1px 4px 100px #ff0000;
+	font-weight: 900;
 
-@media(min-width:767px){
+}
+/*section heading Chicken*/
+
+#sec-head{
+font-size: 1.7em;
+padding-bottom: 25px;
+font-weight: 900;
+}
+
+/*section inner element*/
+#lone-section{
+	font-size:1.5em;
+	color: #ffe6f0;
+border-radius: 10px 10px 10px 10px;
+width:90%;
+padding:10px;
+display: block;
+position: relative;
+float: none;
+margin: 0 auto;
+background-color: #ff4d94;
+
+}
+
+@media(min-width:768px){
 	#collapsable-nav{
 		display: none;!important
 	}
+}
+
+
+@media(max-width:425px){
+#nbrand {
+font-size:8vw;
+width:50%;
+}	
+#menu_button{
+	width:15%;
+}
+
 }
